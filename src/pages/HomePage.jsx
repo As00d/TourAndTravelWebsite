@@ -7,6 +7,7 @@ function HomePage() {
    <div>
     <PageNav/>
     <h1>Home Page</h1>
+    <Link to="app">To App</Link>
    </div>
   )
 }
