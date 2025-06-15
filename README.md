@@ -52,4 +52,9 @@
   ```
 
   And the outlet component is the place where we want to place the nested route component. One more point to note here is by default there is no preffered route if we go to app link but we can make one of the route as default route
-  }
+  using index above also we can do something like <Route index element={<HomePage />} />
+  The next thing that we need to understand is how to setup fake api
+
+  - Install json server package -> npm i json-server
+  - In package.json we need to add "server": "json-server --watch data/cities.json --port 8000"
+  - To run the same we need to do npm run sever
