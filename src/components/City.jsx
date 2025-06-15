@@ -1,5 +1,5 @@
 import styles from "./City.module.css";
-
+import { useParams } from "react-router-dom";
 function City() {
   // TEMP DATA
   const currentCity = {
@@ -8,6 +8,8 @@ function City() {
     date: "2027-10-31T15:59:59.138Z",
     notes: "My favorite city so far!",
   };
+
+  const { id } = useParams();
 
   const { cityName, emoji, date, notes } = currentCity;
 
@@ -22,7 +24,7 @@ function City() {
 
       <div className={styles.row}>
         <h6>You went to {cityName} on</h6>
-        <p>{formatDate(date || null)}</p>
+        {/* <p>{formatDate(date || null)}</p> */}
       </div>
 
       {notes && (
@@ -43,9 +45,7 @@ function City() {
         </a>
       </div>
 
-      <div>
-        <ButtonBack />
-      </div>
+      <div>{/* <ButtonBack /> */}</div>
     </div>
   );
 }

@@ -58,3 +58,5 @@
   - Install json server package -> npm i json-server
   - In package.json we need to add "server": "json-server --watch data/cities.json --port 8000"
   - To run the same we need to do npm run sever
+
+- Storing state in url
