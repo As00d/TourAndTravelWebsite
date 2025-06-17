@@ -59,4 +59,12 @@
   - In package.json we need to add "server": "json-server --watch data/cities.json --port 8000"
   - To run the same we need to do npm run sever
 
-- Storing state in url
+  - Storing state in url
+
+  - Programmatic navigation using useNavigate, this is used when we want to navigate to a page without link, say for example when we submit a form we want to redirect a user to another page that is what the power of useNavigate is
+    - const navigate = useNavigate();
+    ```
+      onClick={() => {
+          navigate("form");
+      }
+    ```
